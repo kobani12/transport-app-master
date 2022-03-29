@@ -15,7 +15,9 @@ class RideController extends Controller
     public function index()
     {
         //
-        return view('rides');
+        $data['rides'] = Ride::all();
+        dd($data);
+        return view('rides',$data);
     }
 
     /**
