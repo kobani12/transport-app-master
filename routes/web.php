@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RideController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
+Route::get('/', [AuthController::class,'showLoginForm']);
+Route::resource('rides', RideController::class);
+Route::get('/user', function () {
+    return view('user');
 });
+Route::get('/driver', function () {
+    return view('driver');
+});
+Route::get('/cars', function () {
+    return view('cars');
+});
+
+
+
