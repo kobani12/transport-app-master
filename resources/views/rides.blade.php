@@ -46,18 +46,21 @@
                     <tr>
                     <th scope="col">ride_id</th>
                     <th scope="col">driver_id</th>
-                    <th scope="col">cars_id</th>
-                    <th scope="col">user_id</th>
+                    <th scope="col">car_id</th>
+                    <th scope="col">driver_id</th>
                     </tr>
                 </thead>
- 
+
                <tbody>
-                            <tr>
-                                <td style="color:white">2</td>
-                                <td style="color:white">4</td>
-                                <td style="color:white">2</td>
-                                <td style="color:white">4</td>
-                            </tr>
+               @foreach($rides as $ride)
+                   <tr>
+                       <td style="color:white">2</td>
+                       <td style="color:white">{{$ride->id}}</td>
+                       <td style="color:white">{{$ride->car_id}}</td>
+                       <td style="color:white">{{$ride->driver_id}}</td>
+                   </tr>
+               @endforeach
+
                         </tbody>
 				</div>
 </div>

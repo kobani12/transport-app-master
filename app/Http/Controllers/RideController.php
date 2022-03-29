@@ -16,7 +16,6 @@ class RideController extends Controller
     {
         //
         $data['rides'] = Ride::all();
-        return $data;
         return view('rides',$data);
     }
 
