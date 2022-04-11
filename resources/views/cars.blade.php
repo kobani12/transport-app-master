@@ -38,7 +38,7 @@
 				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
                     <div class=" fetched-data">
 					<div class="heading mb-4">
-						<h4>Cars</h4>
+						<h4>cars</h4>
 					</div>
                     <div class="table-responsive">
                 <table class="table table-hover" style="background: transparent !important;">
@@ -46,22 +46,24 @@
                     <tr>
                     <th scope="col">color</th>
                     <th scope="col">manufacturer</th>
+                    <th scope="col">model</th>
                     <th scope="col">year</th>
                     <th scope="col">Plate number</th>
-                    <th scope="col">model</th>
                     </tr>
                 </thead>
  
-               <tbody>
-                            <tr>
-                                <td style="color:white">black</td>
-                                <td style="color:white">toyota</td>
-                                <td style="color:white">2009</td>
-                                <td style="color:white"> 23334</td>
-                                <td style="color:white">toyota corolla</td>
-                            </tr>
-                        </tbody>
-				</div>
+                <tbody>
+                    @foreach($cars as $car)
+                    <tr>
+                        <td style="color:white">{{$car->id}}</td>
+                        <td style="color:white">{{$car->driver_id}}</td>
+                        <td style="color:white">{{$car->color}}</td>
+                        <td style="color:white">{{$car->manufacturer}}</td>
+                        <td style="color:white">{{$car->year}}</td>
+                        <td style="color:white">{{$car->plate_number}}</td>
+                    </tr>
+                @endforeach
+                    </div>
 </div>
 			</div>
 		</div>

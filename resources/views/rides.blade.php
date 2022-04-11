@@ -38,7 +38,7 @@
 				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
                     <div class=" fetched-data">
 					<div class="heading mb-4">
-						<h4>Cars</h4>
+						<h4>Rides</h4>
 					</div>
                     <div class="table-responsive">
                 <table class="table table-hover" style="background: transparent !important;">
@@ -54,10 +54,10 @@
                <tbody>
                @foreach($rides as $ride)
                    <tr>
-                       <td style="color:white">2</td>
                        <td style="color:white">{{$ride->id}}</td>
                        <td style="color:white">{{$ride->car_id}}</td>
                        <td style="color:white">{{$ride->driver_id}}</td>
+                       <td style="color:white">{{$ride->car_id}}</td>
                    </tr>
                @endforeach
 

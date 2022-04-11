@@ -38,16 +38,13 @@ class CarsController extends Controller
         //
     }
 
+
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\cars  $cars
      * @return \Illuminate\Http\Response
      */
-    public function show(cars $cars)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.

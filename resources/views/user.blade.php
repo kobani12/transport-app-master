@@ -154,7 +154,7 @@
 				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
 					
 					<div class="heading mb-4">
-						<h4>Book a ride</h4>
+						<h4>Book a Ride</h4>
 					</div>
 					<form>
 						<div class="form-input">
@@ -167,7 +167,7 @@
 						</div>
 						
 						<div class="text-left mb-3">
-							<button type="submit" class="btn">Book ride</button>
+							<button type="submit" class="btn">Book Ride</button>
 						</div>
 					</form>
 				</div>

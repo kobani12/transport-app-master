@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RideController;
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\DriverController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,12 +23,7 @@ Route::resource('rides', RideController::class);
 Route::get('/user', function () {
     return view('user');
 });
-Route::get('/driver', function () {
-    return view('driver');
-});
-Route::get('/cars', function () {
-    return view('cars');
-});
-
-
+Route::resource('cars', CarController::class);
+Route::resource('driver', DriverController::class);
+Route::resource('user', BookingController::class);
 

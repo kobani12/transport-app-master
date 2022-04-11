@@ -15,6 +15,8 @@ class CarController extends Controller
     public function index()
     {
         //
+        $data['cars'] = Car::all();
+        return view('cars',$data);
     }
 
     /**

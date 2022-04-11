@@ -47,22 +47,23 @@
                     <th scope="col">driver_id</th>
                     <th scope="col">user_id</th>
                     <th scope="col">cars_id</th>
-                    <th scope="col">loocation</th>
+                    <th scope="col">location</th>
                     </tr>
                 </thead>
- 
+
                <tbody>
-                            <tr>
-                                <td style="color:white">1</td>
-                                <td style="color:white">4</td>
-                                <td style="color:white">2</td>
-                                <td style="color:white">pleasure park</td>
-                            </tr>
-                        </tbody>
+                @foreach($drivers as $driver)
+                <tr>
+                    <td style="color:white">{{$driver->id}}</td>
+                    <td style="color:white">{{$driver->user_id}}</td>
+                    <td style="color:white">{{$driver->car_id}}</td>
+                    <td style="color:white">{{$driver->location}}</td>
+                </tr>
+            @endforeach
 				</div>
 </div>
 			</div>
 		</div>
 	</div>
 </body>
-</html>
+</html> 
