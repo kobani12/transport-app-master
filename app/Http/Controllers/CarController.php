@@ -16,7 +16,7 @@ class CarController extends Controller
     {
         //
         $data['cars'] = Car::all();
-        return view('cars',$data);
+        return view('pages.cars',$data);
     }
 
     /**
