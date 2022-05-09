@@ -21,6 +21,8 @@ use App\Http\Controllers\UserController;
 Route::get('/user', function () {
     return view('user');
 });
+
+
 Route::get('/', [AuthController::class,'showLoginForm']);
 
 Route::resource('rides', RideController::class);
